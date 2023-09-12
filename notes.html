@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+    <title>Trang Ghi Chú</title>
+    <link rel="stylesheet" href="./css/notestyle.css">
+</head>
+<body>
+    <header>
+        <h1>Ghi Chú</h1>
+    </header>
+    <main>
+        <section id="project-section">
+            <h2>Loại</h2>
+            <select id="project-select">
+                <option value="Dự án">Dự án</option>
+                <option value="Ghi chú">Ghi chú</option>
+                <option value="Lịch Trình">Lịch Trình</option>
+                <!-- Thêm các tùy chọn khác cho các dự án -->
+            </select>
+        </section>
+        <section id="project-section">
+            <h2>Sự kiện</h2>
+            <input type="text" id="project-text">
+        </section>
+        <section id="date-section">
+            <h2>Ngày</h2>
+            <input type="date" id="date-input">
+        </section>
+        <section id="note-section">
+            <h2>Nội dung</h2>
+            <textarea id="note-text"></textarea>
+        </section>
+        
+        
+        <button id="export-button">Xuất dữ liệu</button>
+    </main>
+    <footer>
+        <p>© 2023 - Trang Ghi Chú</p>
+    </footer>
+    <script src="./JavaScript/notes.js"></script>
+</body>
+</html>
